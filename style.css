@@ -1,0 +1,150 @@
+* {
+  font-family: "Micro 5", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.portfolio-containar {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.navlist {
+  display: flex;
+  gap: 4rem;
+  height: 15vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.navlist li {
+  list-style: none;
+}
+.navlist li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+  position: relative;
+}
+.left-containar {
+  background-color: #262525;
+  width: 70%;
+  padding-left: 3rem;
+}
+.right-containar {
+  background: linear-gradient(-45deg, #3877ff, #262525 70%);
+  width: 30%;
+}
+.left-containar,
+.right-containar {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.icons .fa-brands {
+  color: #bbb;
+  font-size: 1.7rem;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.content {
+  margin-left: 4rem;
+}
+.content h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.content h1 {
+  font-size: 4rem;
+  color: #5d9ee5;
+}
+.content p {
+  font-size: 1.1rem;
+  color: #fff;
+  max-width: 38rem;
+  margin: 1.1rem 0 3rem 0;
+  line-height: 1.8rem;
+}
+.btn-contenar button {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border: 0.5rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.5 ease;
+  border-color: #3877ff;
+  transition: 0.5s ease;
+}
+
+#button1 {
+  background-color: #5db9ee;
+}
+#button2 {
+  background-color: #5db9ee;
+  margin-left: 2rem;
+}
+#button1:hover {
+  background-color: transparent;
+  color: #5db9ee;
+}
+#button2:hover {
+  background-color: transparent;
+  color: #5db9ee;
+}
+.icons .fa-brands:hover {
+  cursor: pointer;
+  background: linear-gradient(#fff, #3877ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+  aspect-ratio: 1;
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+  background: linear-gradient(90deg, transparent #262525 50%);
+  width: 38rem;
+}
+.circle:nth-child(2) {
+  width: 30rem;
+  background-image: url("alok.jpg.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 0.3rem solid #fff;
+  box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff, 0 0 4rem #3877ff, inset 0 0 4rem #3877ff;
+}
+
+.navlist li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s;
+}
+.navlist li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
